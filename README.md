@@ -17,6 +17,7 @@ Discord bot for Advent of Code
 - [ ] Get level name/description
 - [ ] Get server leaderboard (via AoC API)
 - [ ] Get user's scores
+- [ ] Limit commands (like `code` or `join`) to specific roles
 - [ ] Connect GitHub
 - [ ] Get user's solutions for level (if they have a GitHub connection)
 - [ ] Find a way to cache leaderboard (AoC limits API requests)

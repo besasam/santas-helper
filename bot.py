@@ -8,7 +8,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 PREFIX = 'aoc!'
 
-cogs = ['Functions.levels', 'Functions.leaderboard']
+cogs = ['functions.levels', 'functions.leaderboard']
 
 client = commands.Bot(command_prefix=PREFIX, help_command=None, intents=intents)
 
