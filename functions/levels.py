@@ -20,9 +20,9 @@ class Levels(commands.Cog):
             year = args[0]
             day = args[1]
         else:
-            today = datetime.now(self._timezone)
             year = str(today.year)
             if not args:
+                today = datetime.now(self._timezone)
                 day = str(today.day)
             else:
                 day = args[0]
