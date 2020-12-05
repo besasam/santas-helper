@@ -3,6 +3,7 @@ import os
 import json
 
 
+# TODO needs to be switched from json to sqlite
 class Leaderboard(commands.Cog):
     _url = 'https://adventofcode.com'
     _dir = 'data'

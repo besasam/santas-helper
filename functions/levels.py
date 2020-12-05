@@ -28,6 +28,7 @@ class Levels(commands.Cog):
                 day = args[0]
         await ctx.send(self._get_day(day, year))
 
+    # Someone please refactor this, it's so ugly
     def _get_day(self, day, year):
         if not day.isdigit() or int(day) > 31:
             return f'{day} is not a valid day!'
@@ -37,8 +38,11 @@ class Levels(commands.Cog):
         if int(year) == today.year:
             if today.month < 12:
                 return 'This year\'s Advent of Code has not started yet!'
-            if int(day) == today.day and int(day) > 25:
-                return 'This year\'s Advent of Code is already over!'
+            if int(day) > 25:
+                if int(day) == today.day:
+                    return 'This year\'s Advent of Code is already over!'
+                else:
+                    return f'{day} is not a valid day!'
             if int(day) > today.day:
                 return 'This day is not unlocked yet!'
         if int(day) > 25:

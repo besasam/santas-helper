@@ -1,6 +1,16 @@
 # Santa's Helper
 Discord bot for Advent of Code
 
+## Usage
+While the core features are still being developed, the bot will not be available publicly yet.
+
+To run it locally: Clone this repo, create a `.env` file in the root directory 
+containing `DISCORD_TOKEN=your_bot_token`, make sure you have all packages installed
+and run `bot.py`. 
+
+But please keep in mind that some commands are not fully implemented yet
+and might lead to errors or undesired behavior.
+
 ## Commands Reference
 * __Levels__
   * `aoc!level`: Get link to today's level
@@ -25,5 +35,7 @@ Discord bot for Advent of Code
 - [ ] Hosting? Deployment? What's that?
 
 ## Contributing
-This is my first bot so it's probably kinda bad, but if you want to help, 
-you can find me on Discord at [The Code Café](https://discord.gg/QjNX9sMYAC) :coffee:
+This is my first bot so it's probably kinda bad, but feel free to report any issue 
+you might find or even make a pull request. Check open issues or look for `TODO`s 
+in the code to see what still needs to be done. And if you want to chat, you can 
+find me on Discord at [The Code Café](https://discord.gg/QjNX9sMYAC) :coffee:
